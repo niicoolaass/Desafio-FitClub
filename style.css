@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+:root {
+    --background: #111317;
+    --laranja: #f9ac54;
+    --laranja-escuro: #d79447;
+    --branco: #ffffff;
+    --max-width: 1200px;
+    --cor-texto: #d1d5db;
+    --cinza-escuro: #1f2125;
+    --cinza-claro: #35373b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);
+    padding: 3vh 35vh;
+    max-width: var(--max-width);
+}
+
+.nav-header {
+    display: flex;
+    gap: 3rem;
+    max-width: var(--max-width);
+}
+
+.nav-header a {
+    position: relative;
+    text-decoration: none;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-header a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    bottom: -9px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--laranja-escuro);
+    transition: width 0.3s ease;
+}
+
+.nav-header a:hover::after {
+    width: 50%;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.join-button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.join-button:hover {
+    background-color: var(--laranja-escuro);
+}
+
+
+
+.secao__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 4rem 1rem;
+}
+
+.secao__cabecalho {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--branco);
+}
+
+.secao__subcabecalho {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+.botao {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--branco);
+    background-color: var(--laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--laranja-escuro);
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteudo1_container {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.conteudo1_container::before {
+    content: "FITNESS";
+    bottom: 5rem;
+    right: 20rem;
+    font-weight: 700;
+    color: var(--branco);
+    font-size: 11rem;
+    position: absolute;
+    line-height: 7rem;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.cabecalho__desfoque {
+    bottom: 7rem;
+    right: 0;
+}
+
+.cabecalho__conteudo h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--laranja-escuro);
+}
+
+.cabecalho__conteudo h1 {
+    margin-bottom: 1rem;
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 6.5rem;
+    color: var(--branco);
+}
+
+.cabecalho__conteudo h1 span {
+    -webkit-text-fill-color: rgb(32, 32, 32);
+    -webkit-text-stroke: 1px var(--branco);
+    margin-right: 10px;
+}
+
+.cabecalho__conteudo p {
+    margin-bottom: 2.5rem;
+    color: var(--cor-texto);
+}
+
+.imagem_conteudo1 {
+    position: relative;
+}
+
+.imagem_conteudo1::before {
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 43rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--laranja);
+    font-weight: 400;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+.imagem_conteudo1 img {
+    max-width: 350px;
+    margin: auto;
+}
+
+/* Benefit Cards - Start */
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    overflow-x: scroll;
+    gap: 3rem;
+}
+
+.card-benefits {
+    background-color: #1f2125;
+    padding: .7rem;
+    display: grid;
+    gap: .5rem;
+    max-width: 19rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+}
+
+.card-benefits h3 {
+    color: #fff;
+}
+
+.card-benefits p {
+    color: #CFD1CC;
+}
+
+.card-benefits a {
+    color: #fff;
+    width: fit-content;
+}
+
+.card-benefits img {
+    width: 25px;
+    background-color: #f9ac54;
+    padding: .4rem;
+    border-radius: .3rem;
+}
+
+/* Benefit Cards - End */
+
+/* Book a Class - Start */
+#book-a-class {
+    gap: 0 2rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #FFFDFF;
+    padding: 10rem;
+}
+
+#book-a-class>.book-imgs img:first-child {
+    max-width: 25vw;
+    float: right;
+    border-radius: .7rem;
+}
+
+#book-a-class>.book-imgs img:last-child {
+    max-width: 15vw;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    border-radius: .7rem;
+}
+
+.book-imgs {
+    position: relative;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 50vh;
+    justify-content: center;
+}
+
+.book-content button {
+    margin-top: 1rem;
+}
+
+.book-content h2 {
+    font-size: 2.5rem;
+}
+
+/* Book a Class - End */
+
+/* Why Join Us? - Start */
+
+#why-join-us {
+    color: #FFFDFF;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.join-us-header {
+    text-align: center;
+}
+
+.join-us-content {
+    position: relative;
+    background-color: #1f2125;
+    border-radius: .7rem;
+}
+
+.join-us-content img:first-child {
+    border-radius: .7rem;
+}
+
+.card-icon img {
+    width: 25px;
+    background-color: #f9ac54;
+    padding: .4rem;
+    border-radius: .3rem;
+}
+
+.join-us-card-wrapper {
+    position: absolute;
+    bottom: -50px;
+    background-color: #1f2125;
+    padding: 1rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+/*  */
+
+/* Princing Plan - Start */
+#pricing-plan {
+    color: #FFFDFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.pricing-benefits>div {
+    display: flex;
+    gap: 10px;
+}
+
+.pricing-benefits>div>img {
+    width: 25px;
+}
+
+.pricing-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Why Join Us? - End */
+
+/* Reviews - Start */
+
+#reviews {
+    color: #FFFDFF;
+}
+
+.review-card-member img {
+    width: 60px;
+    border-radius: 100px;
+}
+
+/* Reviews - End */
+
+/* Footer - Start */
+
+.footer {
+    background-color: var(--background);
+    padding: 3rem 2rem;
+
+}
+
+.footer-total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+
+.footer__logo img {
+    max-width: 150px;
+    margin-bottom: 2rem;
+}
+
+.footer__text {
+    max-width: 400px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+}
+
+.footercoluna {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.footercoluna h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--branco);
+}
+
+.footercoluna a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footercoluna a:hover {
+    color: var(--laranja);
+}
+
+/* Footer - End */
