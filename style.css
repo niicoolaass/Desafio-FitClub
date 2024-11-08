@@ -385,7 +385,7 @@ a {
 
 .card-icon img {
     width: 35px;
-    background-color: var(--laranja);
+    background-color: var(--laranja-escuro);
     padding: .5rem;
     border-radius: .1rem;
 }
@@ -394,13 +394,14 @@ a {
 
 /* Princing Plan - Start */
 #pricing-plan {
-    color: #FFFDFF;
+    color: var(--branco);
     height: 100vh;
     display: flex;
+    margin-top: 40px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 50px;    
 }
 
 .section-title {
@@ -412,15 +413,15 @@ a {
 }
 
 .section-title h2 {
-    font-size: 40px;
+    font-size: 40px;    
 }
 
 .section-title p {
-    color: #d1d5db;
+    color: var(--cor-texto);
 }
 
 .pricing-benefits {
-    gap: 8px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
 }
@@ -432,7 +433,7 @@ a {
 }
 
 .pricing-benefits>div>img {
-    width: 25px;
+    width: 20px;
 }
 
 .pricing-benefits > div > p {
@@ -442,12 +443,13 @@ a {
 .pricing-wrapper {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 35px;
 }
 
 .pricing-card {
     border-radius: 9px;
-    padding: 3rem;
+    padding: 40px 30px;
+    width: 300px;
     background: var(--cinza-escuro);
     gap: 10px;
     display: flex;
@@ -455,22 +457,22 @@ a {
     transition: all .3s;
 
     &:hover {
-        border: 1px solid var(--laranja);
+        border: 2px solid var(--laranja);
+        background: var(--cinza-claro);
         transform: scale(1.1);
+
+    }
+
+    a:hover {
+        transition: all .5s;
+        background: var(--laranja);
+        color: var(--white);
+    
     }
 }
 
-.pricing-card a:hover {
-    transition: all .5s;
-}
-
-.pricing-card a:hover {
-    background: var(--laranja);
-    color: var(--white);
-}
-
 .pricing-card h4 {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .pricing-card span {
@@ -478,16 +480,19 @@ a {
     font-weight: 600;
 }
 
+.pricing-card hr {
+    margin-bottom: 25px;
+}
+
 .pricing-card a {
     color: var(--laranja-escuro);
     width: auto;
-    border: 1px solid var(--laranja-escuro);
+    border: 2px solid var(--laranja-escuro);
     text-align: center;
     padding: .7rem;
     border-radius: 5px;
     margin: 30px 0 0 0;
 }
-
 
 /* Why Join Us? - End */
 
@@ -503,6 +508,49 @@ a {
 }
 
 /* Reviews - End */
+
+/* Slider */
+
+.reviews-wrapper {
+    width: 80%;
+    /* Ajusta a largura do slider */
+    margin: 0 auto;
+    /* Centraliza o slider */
+}
+
+.slick-dots {
+    bottom: -30px;
+    /* Ajusta a posição dos indicadores */
+}
+
+/* Estilos para as setas */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Posicionando as setas ao lado uma da outra */
+.slick-prev {
+    left: 45%;
+    /* Ajuste conforme necessário */
+}
+
+.slick-next {
+    right: 45%;
+    /* Ajuste conforme necessário */
+}
+
+/* Personalize a cor, estilo ou ícones conforme desejado */
+.slick-prev:hover,
+.slick-next:hover {
+    color: #333;
+}
 
 /* Footer - Start */
 
@@ -561,46 +609,3 @@ a {
 }
 
 /* Footer - End */
-
-/* Slider */
-
-.reviews-wrapper {
-    width: 80%;
-    /* Ajusta a largura do slider */
-    margin: 0 auto;
-    /* Centraliza o slider */
-}
-
-.slick-dots {
-    bottom: -30px;
-    /* Ajusta a posição dos indicadores */
-}
-
-/* Estilos para as setas */
-.slick-prev,
-.slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Posicionando as setas ao lado uma da outra */
-.slick-prev {
-    left: 45%;
-    /* Ajuste conforme necessário */
-}
-
-.slick-next {
-    right: 45%;
-    /* Ajuste conforme necessário */
-}
-
-/* Personalize a cor, estilo ou ícones conforme desejado */
-.slick-prev:hover,
-.slick-next:hover {
-    color: #333;
-}
