@@ -488,7 +488,7 @@ a {
 
 }
 
-.footer-total {
+.footer-all {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -500,7 +500,7 @@ a {
 }
 
 
-.footer__logo img {
+.footer-logo img {
     max-width: 150px;
     margin-bottom: 2rem;
 }
@@ -512,27 +512,27 @@ a {
     color: #d1d5db;
 }
 
-.footercoluna {
+.footer-column {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     flex: 1;
 }
 
-.footercoluna h4 {
+.footer-column h4 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--branco);
 }
 
-.footercoluna a {
+.footer-column a {
     color: #d1d5db;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.footercoluna a:hover {
+.footercfooter-columnoluna a:hover {
     color: var(--laranja);
 }
 
