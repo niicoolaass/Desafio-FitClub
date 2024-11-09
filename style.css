@@ -507,13 +507,18 @@ a {
 
 #reviews {
     height: 50vh;
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     background: var(--dark-gray);
 }
 
+.Comments-img {
+}
+
 .reviews-wrapper {
-    width: 950px;
     margin: 0 auto;
+    width: 950px;
 }
 
 .review-card-content {
@@ -522,10 +527,9 @@ a {
 }
 
 .review-card-content span {
-    display: block;       /* Faz o span ocupar toda a largura disponível */
-    margin-bottom: 10px;  /* Adiciona um espaço abaixo do texto */
-    font-weight: 600;    /* Ajuste a negrito, caso queira */
-
+    display: block;       
+    margin-bottom: 10px;  
+    font-weight: 600;  
 }
 
 .review-card span{
@@ -534,7 +538,7 @@ a {
 }
 .review-card-member {
     display: flex;
-    padding-top: 30px;
+    padding-top: 5%;
 }
 
 .review-card-member span {
@@ -559,11 +563,11 @@ a {
     transform: translateY(-50%);  
     background: transparent;  
     border-radius: 50%;  
-    border: 2px solid var(--white); 
+    border: 2px solid var(--orange); 
     width: 30px;  
     height: 30px; 
     font-size: 20px; 
-    color: var(--white); 
+    color: var(--orange); 
     cursor: pointer;  
     z-index: 9999;  
     display: flex;
@@ -583,13 +587,10 @@ a {
 /* Efeito de hover */
 .slick-prev:hover,
 .slick-next:hover {
-    color: var(--orange);  
+    color: var(--dark-orange);  
     transform: translateY(-50%) scale(1.1); 
-    border: 2px solid var(--orange);  
+    border: 2px solid var(--dark-orange);  
 }
-
-
-
 
 /* Footer - Start */
 

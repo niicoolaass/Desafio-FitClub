@@ -6,8 +6,6 @@ $(document).ready(function () {
         autoplaySpeed: 3000,  // Tempo entre os slides (em milissegundos)
         dots: false,           // Exibe os indicadores de página
         arrows: true,         // Oculta as setas de navegação
-        prevArrow: '',
-        nextArrow: '',
     });
 });
 
