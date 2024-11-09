@@ -1,4 +1,3 @@
-// script.js
 $(document).ready(function () {
     $('.reviews-wrapper').slick({
         slidesToShow: 1,      // Mostra um review por vez

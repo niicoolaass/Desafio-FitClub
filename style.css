@@ -12,20 +12,20 @@ body {
 
 :root {
     --background: #111317;
-    --laranja: #f9ac54;
-    --laranja-escuro: #d79447;
-    --branco: #ffffff;
+    --orange: #f9ac54;
+    --dark-orange: #d79447;
+    --white: #ffffff;
     --max-width: 1200px;
-    --cor-texto: #d1d5db;
-    --cinza-escuro: #1f2125;
-    --cinza-claro: #35373b;
+    --text-color: #d1d5db;
+    --dark-gray: #1f2125;
+    --light-gray: #35373b;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--branco);
+    color: var(--white);
     padding: 3vh 35vh;
     max-width: var(--max-width);
 }
@@ -39,7 +39,7 @@ header {
 .nav-header a {
     position: relative;
     text-decoration: none;
-    color: var(--branco);
+    color: var(--white);
     text-decoration: none;
     font-size: 16px;
 }
@@ -52,7 +52,7 @@ header {
     left: 0;
     width: 0;
     height: 3px;
-    background-color: var(--laranja-escuro);
+    background-color: var(--dark-orange);
     transition: width 0.3s ease;
 }
 
@@ -71,7 +71,7 @@ header {
     border: none;
     font-size: 1rem;
     color: var(--white);
-    background-color: var(--laranja);
+    background-color: var(--orange);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -79,7 +79,7 @@ header {
 }
 
 .join-button:hover {
-    background-color: var(--laranja-escuro);
+    background-color: var(--dark-orange);
 }
 
 
@@ -95,14 +95,14 @@ header {
     font-size: 2.25rem;
     font-weight: 600;
     text-align: center;
-    color: var(--branco);
+    color: var(--white);
 }
 
 .secao__subcabecalho {
     max-width: 600px;
     margin: auto;
     text-align: center;
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .botao {
@@ -110,15 +110,15 @@ header {
     outline: none;
     border: none;
     font-size: 1rem;
-    color: var(--branco);
-    background-color: var(--laranja);
+    color: var(--white);
+    background-color: var(--orange);
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .botao:hover {
-    background-color: var(--laranja-escuro);
+    background-color: var(--dark-orange);
 }
 
 img {
@@ -144,7 +144,7 @@ a {
     bottom: 5rem;
     right: 20rem;
     font-weight: 700;
-    color: var(--branco);
+    color: var(--white);
     font-size: 11rem;
     position: absolute;
     line-height: 7rem;
@@ -161,7 +161,7 @@ a {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--laranja-escuro);
+    color: var(--dark-orange);
 }
 
 .cabecalho__conteudo h1 {
@@ -169,18 +169,18 @@ a {
     font-size: 5.3rem;
     font-weight: 700;
     line-height: 6.5rem;
-    color: var(--branco);
+    color: var(--white);
 }
 
 .cabecalho__conteudo h1 span {
     -webkit-text-fill-color: rgb(32, 32, 32);
-    -webkit-text-stroke: 1px var(--branco);
+    -webkit-text-stroke: 1px var(--white);
     margin-right: 10px;
 }
 
 .cabecalho__conteudo p {
     margin-bottom: 2.5rem;
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .imagem_conteudo1 {
@@ -196,7 +196,7 @@ a {
     font-size: 43rem;
     font-weight: 400;
     line-height: 20rem;
-    color: var(--laranja);
+    color: var(--orange);
     font-weight: 400;
     opacity: 0.15;
     z-index: -1;
@@ -219,7 +219,7 @@ a {
 
 #benefists h5{
     max-width: var(--max-width);
-    color: var(--branco);
+    color: var(--white);
     font-size: 2.5rem;
     margin: 0 auto;
     margin-top: 6rem;
@@ -228,7 +228,7 @@ a {
 }
 
 .card-benefits {
-    background-color: #1f2125;
+    background-color: var(--dark-gray);
     padding: .7rem;
     display: grid;
     gap: .5rem;
@@ -243,25 +243,31 @@ a {
 }
 
 .card-benefits:hover {
-    color: var(--laranja-escuro);
+    color: var(--dark-orange);
 }
 
 .card-benefits h3 {
-    color: #fff;
+    color: var(--white);
 }
 
 .card-benefits p {
-    color: #CFD1CC;
+    color: var(--text-color);
 }
 
 .card-benefits a {
-    color: #fff;
+    color: var(--white);
     width: fit-content;
+}
+
+.card-benefits a:hover{
+    transition: all .5s;
+
+    color: var(--dark-orange);
 }
 
 .card-benefits img {
     width: 25px;
-    background-color: var(--laranja);
+    background-color: var(--dark-orange);
     padding: .4rem;
     border-radius: .3rem;
 }
@@ -353,7 +359,7 @@ a {
 .join-us-card-wrapper {
     position: absolute;
     bottom: -5rem;
-    background-color: var(--cinza-escuro);
+    background-color: var(--dark-gray);
     padding: 2.5rem;
     display: flex;
     margin: 0 auto;
@@ -376,7 +382,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .card-content h4 {
@@ -385,7 +391,7 @@ a {
 
 .card-icon img {
     width: 35px;
-    background-color: var(--laranja-escuro);
+    background-color: var(--dark-orange);
     padding: .5rem;
     border-radius: .1rem;
 }
@@ -394,7 +400,7 @@ a {
 
 /* Princing Plan - Start */
 #pricing-plan {
-    color: var(--branco);
+    color: var(--white);
     height: 100vh;
     display: flex;
     margin-top: 40px;
@@ -417,7 +423,7 @@ a {
 }
 
 .section-title p {
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .pricing-benefits {
@@ -450,22 +456,22 @@ a {
     border-radius: 9px;
     padding: 40px 30px;
     width: 300px;
-    background: var(--cinza-escuro);
+    background: var(--dark-gray);
     gap: 10px;
     display: flex;
     flex-direction: column;
     transition: all .3s;
 
     &:hover {
-        border: 2px solid var(--laranja);
-        background: var(--cinza-claro);
+        border: 2px solid var(--orange);
+        background: var(--light-gray);
         transform: scale(1.1);
 
     }
 
     a:hover {
         transition: all .5s;
-        background: var(--laranja);
+        background: var(--orange);
         color: var(--white);
     
     }
@@ -485,21 +491,22 @@ a {
 }
 
 .pricing-card a {
-    color: var(--laranja-escuro);
+    color: var(--dark-orange);
     width: auto;
-    border: 2px solid var(--laranja-escuro);
+    border: 2px solid var(--dark-orange);
     text-align: center;
     padding: .7rem;
     border-radius: 5px;
     margin: 30px 0 0 0;
 }
 
+
 /* Why Join Us? - End */
 
 /* Reviews - Start */
 
 #reviews {
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .review-card-member img {
@@ -581,7 +588,7 @@ a {
     max-width: 400px;
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: var(--cor-texto);
+    color: var(--text-color);
 }
 
 .footer-column {
@@ -595,17 +602,17 @@ a {
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--branco);
+    color: var(--white);
 }
 
 .footer-column a {
-    color: var(--cor-texto);
+    color: var(--text-color);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .footercfooter-columnoluna a:hover {
-    color: var(--laranja);
+    color: var(--orange);
 }
 
 /* Footer - End */
