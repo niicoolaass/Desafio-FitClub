@@ -1,15 +1,19 @@
+/* Importando a fonte 'Poppins' do Google Fonts com diferentes pesos */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Resetando as margens e preenchimentos para todos os elementos e aplicando a fonte 'Poppins' */
 * {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
 
+/* Definindo o fundo da página com a variável 'background' */
 body {
     background-color: var(--background);
 }
 
+/* Declaração de variáveis CSS para cores e tamanhos usados em todo o site */
 :root {
     --background: #111317;
     --orange: #f9ac54;
@@ -21,6 +25,7 @@ body {
     --light-gray: #35373b;
 }
 
+/* Estilizando o cabeçalho: organizando os elementos com flexbox e adicionando espaçamento */
 header {
     display: flex;
     justify-content: space-between;
@@ -30,25 +35,26 @@ header {
     max-width: var(--max-width);
 }
 
+/* Estilizando a barra de navegação, usando flexbox para alinhar os itens */
 .nav-header {
     display: flex;
     gap: 3rem;
     max-width: var(--max-width);
 }
 
+/* Estilizando os links da navegação */
 .nav-header a {
     position: relative;
     text-decoration: none;
     color: var(--white);
-    text-decoration: none;
     font-size: 16px;
 }
 
+/* Estilizando o efeito de hover nos links */
 .nav-header a::after {
     content: '';
     position: absolute;
     bottom: 0;
-    bottom: -9px;
     left: 0;
     width: 0;
     height: 3px;
@@ -56,14 +62,17 @@ header {
     transition: width 0.3s ease;
 }
 
+/* Efeito de hover nos links, expandindo a linha de destaque */
 .nav-header a:hover::after {
     width: 50%;
 }
 
+/* Estilizando o logo do cabeçalho, limitando sua largura */
 .logo-header {
     max-width: 150px;
 }
 
+/* Estilizando o botão 'Join Now' */
 .join-button {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem 2rem;
@@ -78,16 +87,19 @@ header {
     width: fit-content;
 }
 
+/* Estilizando o efeito de hover no botão 'Join Now' */
 .join-button:hover {
     background-color: var(--dark-orange);
 }
 
+/* Estilizando a seção hero, incluindo seu padding e a largura máxima */
 .hero__section {
     max-width: var(--max-width);
     margin: auto;
     padding: 4rem 1rem;
 }
 
+/* Estilizando o botão 'Get Started' */
 .started-button {
     padding: 1rem 2rem;
     outline: none;
@@ -100,19 +112,24 @@ header {
     transition: 0.3s;
 }
 
+/* Efeito de hover no botão 'Get Started' */
 .started-button:hover {
     background-color: var(--dark-orange);
 }
 
+/* Estilizando as imagens de forma que fiquem flexíveis e ajustem o tamanho */
 img {
     width: 100%;
     display: flex;
 }
 
+/* Estilo geral para links, removendo o sublinhado */
 a {
     text-decoration: none;
 }
 
+
+/* Container principal da seção hero */
 .hero__container {
     position: relative;
     padding-top: 2rem;
@@ -122,6 +139,7 @@ a {
     gap: 2rem;
 }
 
+/* Estilo para o pseudo-elemento antes do conteúdo da seção hero */
 .hero__container::before {
     content: "FITNESS";
     bottom: 5rem;
@@ -135,7 +153,7 @@ a {
     z-index: -1;
 }
 
-
+/* Estilização do título secundário (h4) dentro do conteúdo da seção hero */
 .hero__content h4 {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -143,6 +161,7 @@ a {
     color: var(--dark-orange);
 }
 
+/* Estilização do título principal (h1) dentro do conteúdo da seção hero */
 .hero__content h1 {
     margin-bottom: 1rem;
     font-size: 5.3rem;
@@ -151,21 +170,25 @@ a {
     color: var(--white);
 }
 
+/* Estilização para a tag <span> dentro do título principal */
 .hero__content h1 span {
     -webkit-text-fill-color: rgb(32, 32, 32);
     -webkit-text-stroke: 1px var(--white);
     margin-right: 10px;
 }
 
+/* Estilização do parágrafo dentro do conteúdo da seção hero */
 .hero__content p {
     margin-bottom: 2.5rem;
     color: var(--text-color);
 }
 
+/* Estilização da imagem na seção hero */
 .hero__image {
     position: relative;
 }
 
+/* Estilização do pseudo-elemento antes da imagem */
 .hero__image::before {
     content: "o";
     position: absolute;
@@ -176,57 +199,54 @@ a {
     font-weight: 400;
     line-height: 20rem;
     color: var(--orange);
-    font-weight: 400;
     opacity: 0.1;
     z-index: -1;
 }
 
+/* Estilizando a imagem na seção hero */
 .hero__image img {
     max-width: 350px;
     margin: auto;
 }
 
-
-
+/* Estilizando os botões de navegação (setas) do slider */
 .slick-prev,
 .slick-next {
     position: absolute;
-    top: 0;  
-    transform: translateY(-120px);  
+    top: 0;
+    transform: translateY(-120px);
     border: 1px solid var(--orange);
     padding: 5px;
     border-radius: 100%;
-    background: transparent;  
-    width: 25px;  
-    font-size: 20px; 
-    color: var(--orange); 
-    cursor: pointer;  
-    z-index: 9999;  
+    background: transparent;
+    width: 25px;
+    font-size: 20px;
+    color: var(--orange);
+    cursor: pointer;
+    z-index: 9999;
     display: flex;
     align-items: center;
-    justify-content: center;  
-    transition: all 0.3s ease; 
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
+/* Estilização específica para a seta anterior (slick-prev) */
 .slick-prev {
     right: 90px;
 }
 
+/* Estilização específica para a seta próxima (slick-next) */
 .slick-next {
-    right: 20px;  
+    right: 20px;
 }
 
-/* Efeito de hover */
+/* Efeito de hover nas setas */
 .slick-prev:hover,
 .slick-next:hover {
-    transform: translateY(-120px) scale(1.2); 
+    transform: translateY(-120px) scale(1.2);
 }
 
-
-
-
-/* Benefit Cards - Start */
-
+/* Estilizando o wrapper para as cards, utilizando flexbox */
 .card-wrapper {
     display: flex;
     flex-direction: row;
@@ -235,7 +255,8 @@ a {
     gap: 20px;
 }
 
-#benefists h5{
+/* Estilo do título dentro da seção #benefits */
+#benefists h5 {
     max-width: var(--max-width);
     color: var(--white);
     font-size: 2.5rem;
@@ -245,6 +266,7 @@ a {
     gap: 20px;
 }
 
+/* Estilizando cada card dentro da seção de benefícios */
 .card-benefits {
     background-color: var(--dark-gray);
     padding: 1rem;
@@ -254,36 +276,43 @@ a {
     margin: 0 auto;
     border-radius: .4rem;
     margin-right: 20px;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
+/* Remove o espaçamento à direita da última card */
+.card-benefits:last-child {
+    margin-right: 0;
+}
+
+/* Estilo do efeito de hover nas cards */
 .card-benefits:hover {
     color: var(--dark-orange);
 }
 
+/* Estilizando o título (h3) dentro de cada card */
 .card-benefits h3 {
     color: var(--white);
     margin-top: 15px;
 }
 
+/* Estilizando o parágrafo dentro das cards */
 .card-benefits p {
     margin-top: 5px;
     margin-bottom: 12px;
     color: var(--text-color);
 }
 
+/* Estilizando os links dentro das cards */
 .card-benefits a {
     color: var(--white);
     transition: all .5s;
 }
 
-.card-benefits a:hover{
+/* Estilo do efeito de hover nos links */
+.card-benefits a:hover {
     color: var(--dark-orange);
 }
 
+/* Estilo das imagens dentro das cards */
 .card-benefits img {
     width: 25px;
     background-color: var(--dark-orange);
@@ -291,6 +320,7 @@ a {
     border-radius: .3rem;
 }
 
+/* Estilizando a seção para agendar uma aula (#book-a-class) */
 #book-a-class {
     gap: 0 2rem;
     max-width: var(--max-width);
@@ -301,12 +331,14 @@ a {
     padding: 10rem;
 }
 
+/* Estilizando a primeira imagem dentro de #book-a-class */
 #book-a-class>.book-imgs img:first-child {
     max-width: 25vw;
     float: right;
     border-radius: .7rem;
 }
 
+/* Estilizando a segunda imagem dentro de #book-a-class */
 #book-a-class>.book-imgs img:last-child {
     max-width: 15vw;
     float: left;
@@ -316,10 +348,12 @@ a {
     border-radius: .7rem;
 }
 
+/* Estilo do contêiner de imagens dentro de #book-a-class */
 .book-imgs {
     position: relative;
 }
 
+/* Estilo do conteúdo dentro de #book-a-class */
 .book-content {
     display: flex;
     flex-direction: column;
@@ -328,24 +362,24 @@ a {
     justify-content: center;
 }
 
+/* Estilizando o botão dentro de .book-content */
 .book-content button {
     margin-top: 1rem;
 }
 
+/* Estilo do título (h2) dentro de .book-content */
 .book-content h2 {
     font-size: 2.5rem;
 }
 
-/* Book a Class - End */
-
-/* Why Join Us? - Start */
-
+/* Estilizando a seção principal onde será exibido o "Why Join Us" */
 #why-join-us {
     color: #FFFDFF;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
+/* Estilizando o cabeçalho dentro da seção 'join us' */
 .join-us-header {
     text-align: center;
     gap: 1.25rem;
@@ -354,24 +388,29 @@ a {
     flex-direction: column;
 }
 
+/* Estilizando o título dentro do cabeçalho 'join us' */
 .join-us-header h2 {
     font-size: 40px;
 }
 
+/* Estilizando o parágrafo dentro do cabeçalho 'join us' */
 .join-us-header p {
     color: #d1d5db;
 }
 
+/* Estilo do contêiner de conteúdo da seção 'join us' */
 .join-us-content {
     position: relative;
     background-color: #1f2125;
     border-radius: .7rem;
 }
 
+/* Estilo da primeira imagem dentro de 'join-us-content' */
 .join-us-content img:first-child {
     border-radius: .7rem;
 }
 
+/* Estilizando o contêiner de cards dentro da seção 'join us' */
 .join-us-card-wrapper {
     position: absolute;
     bottom: -5rem;
@@ -383,17 +422,21 @@ a {
     border-radius: .6rem;
 }
 
+/* Centraliza o conteúdo dentro do 'join-us-card-wrapper' */
 .join-us-card-center {
     justify-content: center;
     display: flex;
 }
 
+
+/* Estilo para os cards individuais dentro de 'join-us-card-wrapper' */
 .card {
-    display: flex;
+    display: flex; 
     align-items: center;
-    gap: 20px;
+    gap: 20px; 
 }
 
+/* Estilo do conteúdo dentro dos cards */
 .card-content {
     display: flex;
     flex-direction: column;
@@ -401,10 +444,12 @@ a {
     color: var(--text-color);
 }
 
+/* Estilo para o título dentro do card */
 .card-content h4 {
     font-size: 1.25rem;
 }
 
+/* Estilo para o ícone dentro do card */
 .card-icon img {
     width: 35px;
     background-color: var(--dark-orange);
@@ -412,6 +457,7 @@ a {
     border-radius: .1rem;
 }
 
+/* Estilo da seção de planos de preços (#pricing-plan) */
 #pricing-plan {
     color: var(--white);
     height: 100vh;
@@ -420,9 +466,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;    
+    gap: 50px;
 }
 
+/* Estilizando o título da seção de planos de preços */
 .section-title {
     text-align: center;
     gap: 1.25rem;
@@ -431,40 +478,49 @@ a {
     flex-direction: column;
 }
 
+/* Estilo do título (h2) dentro de .section-title */
 .section-title h2 {
-    font-size: 40px;    
+    font-size: 40px;
 }
 
+/* Estilo para o parágrafo dentro de .section-title */
 .section-title p {
     color: var(--text-color);
 }
 
+
+/* Estilo para os benefícios de preços na seção de planos */
 .pricing-benefits {
     gap: 15px;
     display: flex;
     flex-direction: column;
 }
 
+/* Estilo para os itens dentro de 'pricing-benefits' */
 .pricing-benefits > div {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
+/* Estilo para as imagens dentro dos benefícios de preços */
 .pricing-benefits>div>img {
     width: 20px;
 }
 
+/* Estilo para o parágrafo dentro de 'pricing-benefits' */
 .pricing-benefits > div > p {
     font-size: 14px;
 }
 
+/* Estilo para o contêiner geral dos planos de preços */
 .pricing-wrapper {
     display: flex;
     justify-content: center;
     gap: 35px;
 }
 
+/* Estilo para os cards de preços */
 .pricing-card {
     border-radius: 9px;
     padding: 40px 30px;
@@ -475,35 +531,39 @@ a {
     display: flex;
     flex-direction: column;
     transition: all .3s;
-
-    &:hover {
-        border: 2px solid var(--orange);
-        background: var(--light-gray);
-        transform: scale(1.1);
-
-    }
-
-    a:hover {
-        transition: all .5s;
-        background: var(--orange);
-        color: var(--white);
-    
-    }
 }
 
+/* Efeito de hover nos cards de preços */
+.pricing-card:hover {
+    border: 2px solid var(--orange);
+    background: var(--light-gray);
+    transform: scale(1.1);
+}
+
+/* Efeito de hover nos links dentro dos cards de preços */
+.pricing-card a:hover {
+    transition: all .5s;
+    background: var(--orange);
+    color: var(--white);
+}
+
+/* Estilo para o título dentro do card de preços */
 .pricing-card h4 {
     font-weight: 600;
 }
 
+/* Estilo para o preço dentro do card de preços */
 .pricing-card span {
     font-size: 40px;
     font-weight: 600;
 }
 
+/* Estilo para a linha horizontal dentro do card de preços */
 .pricing-card hr {
     margin-bottom: 25px;
 }
 
+/* Estilo para o link dentro do card de preços */
 .pricing-card a {
     color: var(--dark-orange);
     width: auto;
@@ -514,6 +574,7 @@ a {
     margin-top: auto;
 }
 
+/* Estilo para a seção de avaliações/reviews */
 #reviews {
     height: 55vh;
     display: flex;
@@ -522,12 +583,14 @@ a {
     background: var(--dark-gray);
 }
 
+/* Contêiner de todas as avaliações */
 .reviews-wrapper {
     margin: 0 auto;
     display: flex;
     width: 950px;
 }
 
+/* Estilo para os ícones de estrela */
 .star-icons {
     width: 20px;
     display: flex;
@@ -536,91 +599,105 @@ a {
     gap: 6px;
 }
 
+/* Estilo para o conteúdo da avaliação */
 .review-card-content span {
-    display: block;       
-    margin-bottom: 20px;  
-    font-weight: 600; 
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
+/* Estilo para o texto dentro do cartão de avaliação */
 .review-card span{
     font-size: 20px;
     color: var(--white);
 }
 
+/* Estilo para a parte do membro da avaliação (nome e imagem) */
 .review-card-member {
     display: flex;
     margin-top: 25px;
     padding-top: 5%;
 }
 
-.review-card-member h4{
+/* Estilo para o nome do membro da avaliação */
+.review-card-member h4 {
     font-size: 18px;
     color: var(--white);
 }
 
+/* Estilo para o cargo ou função do membro da avaliação */
 .review-card-member span {
     font-size: 15px;
 }
 
+/* Estilo para a imagem do membro da avaliação */
 .review-card-member img {
     width: 50px;
     border-radius: 50%;
     margin-right: 0.8rem;
 }
 
+/* Estilo para os botões de navegação do carrossel de avaliações */
 .slick-prev2,
 .slick-next2 {
     position: absolute;
-    top: 100%;  
-    transform: translateY(-50%);  
-    background: transparent;  
-    border-radius: 50%;  
-    width: 25px;  
-    font-size: 20px; 
-    color: var(--orange); 
-    cursor: pointer;  
-    z-index: 9999;  
+    top: 100%;
+    transform: translateY(-50%);
+    background: transparent;
+    border-radius: 50%;
+    width: 25px;
+    font-size: 20px;
+    color: var(--orange);
+    cursor: pointer;
+    z-index: 9999;
     display: flex;
     align-items: center;
-    justify-content: center;  
-    transition: all 0.3s ease; 
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
+/* Estilo para o botão de navegação anterior */
 .slick-prev2 {
     right: 70px;
 }
 
+/* Estilo para o botão de navegação seguinte */
 .slick-next2 {
-    right: 10px;  
+    right: 10px;
 }
 
+/* Efeito de hover nos botões de navegação */
 .slick-prev2:hover,
 .slick-next2:hover {
-    transform: translateY(-50%) scale(1.2); 
+    transform: translateY(-50%) scale(1.2);
 }
 
 
+/* Estilo para o rodapé */
 .footer {
     background-color: var(--background);
     padding: 3rem 2rem;
 }
 
+/* Contêiner principal do rodapé */
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: flex-start;
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 1rem 2rem;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 2rem; 
+    align-items: flex-start; 
+    max-width: var(--max-width); 
+    margin: auto; 
+    padding: 1rem 2rem; 
 }
 
+/* Logo do rodapé */
 .footer-logo {
     max-width: 150px;
     margin-bottom: 2rem;
 }
 
+/* Texto de descrição no rodapé */
 .footer-txt p {
     max-width: 400px;
     font-size: 1rem;
@@ -628,6 +705,7 @@ a {
     color: var(--text-color);
 }
 
+/* Estilo para os ícones de redes sociais */
 .social-media {
     display: flex;
     margin-top: 30px;
@@ -635,19 +713,22 @@ a {
     width: 20px;
 }
 
+/* Estilo para cada ícone de rede social */
 .social-media-logo {
     border: 1px solid var(--orange);
     cursor: pointer;
     padding: 8px;
     border-radius: 100%;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
+/* Efeito de hover nos ícones das redes sociais */
 .social-media-logo:hover {
     border: 1px solid var(--dark-orange);
-    transform: translateY(-20%) scale(1.2); 
+    transform: translateY(-20%) scale(1.2);
 }
 
+/* Estilo para as colunas no rodapé */
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -655,110 +736,117 @@ a {
     flex: 1;
 }
 
+/* Estilo para os títulos das colunas no rodapé */
 .footer-column h4 {
     margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--white);
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: var(--white); 
 }
 
+/* Estilo para os links dentro das colunas do rodapé */
 .footer-column a {
     color: var(--text-color);
-    text-decoration: none;
-    transition: all 0.3s ; 
+    text-decoration: none; 
+    transition: all 0.3s; 
 }
+
 
 .footer-column a:hover {
-    color: var(--dark-orange);
+    color: var(--dark-orange); 
 }
 
-.forms{
-    width: 100vw;
-    height: 100vh;
-    background: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+
+/* Estilos para o arquivo "login.html */
+.forms {
+    width: 100vw; 
+    height: 100vh; 
+    background: var(--background); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.login{
-    width: 35vh;
-    height: 45vh;
-    background-color: var(--dark-gray);
-    opacity: 95%;
-    border-radius: 3%;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
+/* Estilos para o formulário de login */
+.login {
+    width: 35vh; 
+    height: 45vh; 
+    background-color: var(--dark-gray); 
+    opacity: 95%; 
+    border-radius: 3%; 
+    padding: 3rem; 
+    display: flex; 
+    flex-direction: column; 
 }
 
-.t-login{
-    font-size: 2rem;
-    font-weight: 600;
-    justify-content: center;
-    display: flex;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    color:var(--white);    
+.t-login {
+    font-size: 2rem; 
+    font-weight: 600; 
+    justify-content: center; 
+    display: flex; 
+    margin-top: 1rem; 
+    margin-bottom: 2rem; 
+    color: var(--white); 
 }
 
-.login label{
-    font-size: 1rem;
-    color:var(--white);
+.login label {
+    font-size: 1rem; 
+    color: var(--white); 
 }
 
 .login input {
-    margin-bottom: 3rem;
-    height: 2rem;
-    border: none;
-    border-bottom: 1px solid var(--white);
-    background-color: transparent;
-    outline: none;
+    margin-bottom: 3rem; 
+    height: 2rem; 
+    border: none; 
+    border-bottom: 1px solid var(--white); 
+    background-color: transparent; 
+    outline: none; 
     transition: all 300ms ease;
-    color:white;
-
+    color: white;
 }
 
-.login input:hover{
-    border-bottom: 1px solid var(--orange);
+.login input:hover {
+    border-bottom: 1px solid var(--orange); 
 }
 
-.links{
-    display: flex;
-    justify-content: space-between;
-
+/* Estilos para os links no formulário */
+.links {
+    display: flex; 
+    justify-content: space-between; 
 }
 
-.links a{
-    font-size: 0.9rem;
-    color:var(--text-color);
-    margin-bottom: 2rem;
-    transition: all 200ms ease;
+.links a {
+    font-size: 0.9rem; 
+    color: var(--text-color);
+    margin-bottom: 2rem; 
+    transition: all 200ms ease; 
 }
 
-.links a:hover{
-    color: var(--white);
+.links a:hover {
+    color: var(--white); 
 }
 
-.login button{
-    margin-bottom: 0.4rem;
-    height: 3rem;
-    width: 100%;
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 4px;
+/* Estilos para o botão de login */
+.login button {
+    margin-bottom: 0.4rem; 
+    height: 3rem; 
+    width: 100%; 
+    border: none; 
+    color: var(--white); 
+    cursor: pointer; 
+    font-size: 1rem; 
+    border-radius: 4px; 
 }
 
-
-.login-join{
-    background-color: var(--orange);
-    transition: all 300ms ease;
+.login-join {
+    background-color: var(--orange); 
+    transition: all 300ms ease; 
 }
 
-.login-join:hover{
-    background-color: var(--dark-orange);
+.login-join:hover {
+    background-color: var(--dark-orange); 
 }
 
 
