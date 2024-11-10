@@ -23,3 +23,10 @@ Siga a estrução abaixo para executar o projeto em seu ambiente local:
    ```
    git clone https://github.com/niicoolaass/Fitclub-Academia.git
    ```
+
+2. **Navegue até o diretório do projeto:**
+
+   ```
+   cd Fitclub-Academia
+   ```
+
