@@ -6,7 +6,8 @@ Este projeto é um desafio proposto pelo Grupo Pegazus! Aqui você encontrará i
 
 O FitClub é uma aplicação web simples de uma Club para academias, com informações das suas vantagens, planos e avaliação de clientes. 
 
-![image](https://github.com/user-attachments/assets/676f0ce7-8d00-4c4d-afb6-2c1bbd04c870)
+![image](https://github.com/user-attachments/assets/be27b4cc-d64a-4e8f-b212-fe64856554f6)
+
 
 ## 🛠️ Ferramentas Utilizadas
 
