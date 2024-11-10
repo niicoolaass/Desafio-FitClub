@@ -82,8 +82,6 @@ header {
     background-color: var(--dark-orange);
 }
 
-
-
 .secao__container {
     max-width: var(--max-width);
     margin: auto;
@@ -712,4 +710,98 @@ a {
 }
 
 /* Footer - End */
+
+.forms{
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login */
+.login{
+    width: 35vh;
+    height: 45vh;
+    background-color: var(--dark-gray);
+    opacity: 95%;
+    border-radius: 3%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.t-login{
+    font-size: 2rem;
+    font-weight: 600;
+    justify-content: center;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color:var(--white);    
+}
+
+.login label{
+    font-size: 1rem;
+    color:var(--white);
+}
+
+.login input {
+    margin-bottom: 3rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background-color: transparent;
+    outline: none;
+    transition: all 300ms ease;
+    color:white;
+
+}
+
+.login input:hover{
+    border-bottom: 1px solid var(--orange);
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links a{
+    font-size: 0.9rem;
+    color:var(--text-color);
+    margin-bottom: 2rem;
+    transition: all 200ms ease;
+}
+
+.links a:hover{
+    color: var(--white);
+}
+
+.login button{
+    margin-bottom: 0.4rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+
+.login-join{
+    background-color: var(--orange);
+    transition: all 300ms ease;
+}
+
+.login-join:hover{
+    background-color: var(--dark-orange);
+}
+
+
+
 
