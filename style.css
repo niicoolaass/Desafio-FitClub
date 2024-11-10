@@ -496,6 +496,7 @@ a {
     border-radius: 9px;
     padding: 40px 30px;
     width: 300px;
+    height: 400px;
     background: var(--dark-gray);
     gap: 10px;
     display: flex;
@@ -537,7 +538,7 @@ a {
     text-align: center;
     padding: .7rem;
     border-radius: 5px;
-    margin: 30px 0 0 0;
+    margin-top: auto;
 }
 
 
@@ -546,7 +547,7 @@ a {
 /* Reviews - Start */
 
 #reviews {
-    height: 50vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     color: var(--text-color);
