@@ -92,6 +92,7 @@ header {
     background-color: var(--dark-orange);
 }
 
+
 /* Estilizando a seção hero, incluindo seu padding e a largura máxima */
 .hero__section {
     max-width: var(--max-width);
@@ -848,6 +849,7 @@ a {
 .login-join:hover {
     background-color: var(--dark-orange); 
 }
+
 
 
 
