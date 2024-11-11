@@ -4,7 +4,9 @@ Este projeto é um desafio proposto pelo Grupo Pegazus! Aqui você encontrará i
 
 ## Sobre o Projeto
 
-O FitClub é uma aplicação web simples de uma Club para academias, com informações das suas vantagens, planos e avaliação de clientes. 
+O FitClub é uma aplicação web simples de uma Club, com informações das suas vantagens, planos e avaliação de clientes. 
+
+![image](https://github.com/user-attachments/assets/be27b4cc-d64a-4e8f-b212-fe64856554f6)
 
 
 ## 🛠️ Ferramentas Utilizadas
@@ -22,3 +24,10 @@ Siga a estrução abaixo para executar o projeto em seu ambiente local:
    ```
    git clone https://github.com/niicoolaass/Fitclub-Academia.git
    ```
+
+2. **Navegue até o diretório do projeto:**
+
+   ```
+   cd Fitclub-Academia
+   ```
+
