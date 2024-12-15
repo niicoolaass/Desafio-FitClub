@@ -1,6 +1,6 @@
 ## 🎉 **Bem-vindo ao FitClub** 🚀
 
-Este projeto é um desafio proposto pelo Grupo Pegazus! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e instruções sobre como executá-lo em seu ambiente local.
+Este projeto é a resolução de um desafio! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e instruções sobre como executá-lo em seu ambiente local.
 
 ## Sobre o Projeto
 
