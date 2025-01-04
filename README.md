@@ -22,7 +22,7 @@ Siga a estrução abaixo para executar o projeto em seu ambiente local:
 1. **Clone o repositório:**
 
    ```
-   git clone https://github.com/niicoolaass/Fitclub-Academia.git
+   git clone https://github.com/niicoolaass/Desafio-FitClub.git
    ```
 
 2. **Navegue até o diretório do projeto:**
